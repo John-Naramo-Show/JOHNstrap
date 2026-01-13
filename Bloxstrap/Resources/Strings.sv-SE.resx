@@ -919,7 +919,7 @@ Om du avinstallerar eller ominstallerar eftersom du har problem med Roblox, läs
 
 Avinstallationsprocessen kanske inte kan ta bort alla Bloxstraps filer och lämmna kvar några filer där Bloxstrap installerades, som du kan behöva ta bort manuellt.
 
-Bloxstrap installerades i "{1}".</value>
+Johnstrap installerades i "{1}".</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Behåll mina inställningar och moddar</value>
