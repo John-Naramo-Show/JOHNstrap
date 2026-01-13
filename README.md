@@ -10,7 +10,7 @@
 
 Johnstrap is a third-party replacement for the standard Roblox bootstrapper, providing additional useful features and improvements.
 
-Johnstrap is only supported for PCs running Windows.
+Johnstrap is only supported for PCs running Windows. Muahaha.
 
 ## Frequently Asked Questions
 
