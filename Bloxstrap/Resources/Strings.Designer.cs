@@ -2175,6 +2175,14 @@ namespace Bloxstrap.Resources {
                 return ResourceManager.GetString("LaunchMenu.Wiki.Description", resourceCulture);
             }
         }
+
+        public static string LaunchMenu_JNSDiscord
+        {
+            get
+            {
+                return ResourceManager.GetString(name: "LaunchMenu.JNSDiscord", culture: resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized string similar to Having an issue?.

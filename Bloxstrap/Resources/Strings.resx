@@ -940,6 +940,9 @@ Johnstrap was installed at "{1}".</value>
   <data name="LaunchMenu.Wiki.Description" xml:space="preserve">
     <value>See the Wiki for help</value>
   </data>
+  <data name="LaunchMenu.JNSDiscord" xml:space="preserve">
+    <value>Join the John Naramo Show Discord!</value>
+  </data>
   <data name="Bootstrapper.WebView2NotFound" xml:space="preserve">
     <value>You currently do not have the WebView2 runtime installed. Some Roblox features will not work properly without it, such as the desktop app. Would you like to download it now?</value>
   </data>
