@@ -100,7 +100,6 @@ jobs:
           fi
 
       - name: Send Discord notification
-        if: secrets.DISCORD_WEBHOOK_URL != ''
         run: |
           curl -X POST "${{ secrets.DISCORD_WEBHOOK_URL }}" \
             -H "Content-Type: application/json" \
