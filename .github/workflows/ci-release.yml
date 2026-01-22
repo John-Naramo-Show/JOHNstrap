@@ -99,14 +99,25 @@ jobs:
             echo "color=3066993" >> $GITHUB_OUTPUT
           fi
 
+      - name: Determine notification message
+        id: message
+        run: |
+          if [[ "${{ github.ref }}" == refs/tags/v* ]]; then
+            echo "title=Workflow ${{ steps.status.outputs.status }}" >> $GITHUB_OUTPUT
+            echo "description=**CI (Release)** workflow has completed" >> $GITHUB_OUTPUT
+          else
+            echo "title=Builds passing" >> $GITHUB_OUTPUT
+            echo "description=**CI (Release)** builds are passing" >> $GITHUB_OUTPUT
+          fi
+
       - name: Send Discord notification
         run: |
           curl -X POST "${{ secrets.DISCORD_WEBHOOK_URL }}" \
             -H "Content-Type: application/json" \
             -d '{
               "embeds": [{
-                "title": "Workflow ${{ steps.status.outputs.status }}",
-                "description": "**CI (Release)** workflow has completed",
+                "title": "${{ steps.message.outputs.title }}",
+                "description": "${{ steps.message.outputs.description }}",
                 "color": ${{ steps.status.outputs.color }},
                 "fields": [
                   {
