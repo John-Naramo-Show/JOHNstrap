@@ -102,7 +102,7 @@ jobs:
       - name: Determine notification message
         id: message
         run: |
-          if [[ "${{ github.ref }}" == refs/tags/v* ]]; then
+          if [[ "${{ github.ref }}" == "refs/tags/v"* ]]; then
             echo "title=Workflow ${{ steps.status.outputs.status }}" >> $GITHUB_OUTPUT
             echo "description=**CI (Release)** workflow has completed" >> $GITHUB_OUTPUT
           else
