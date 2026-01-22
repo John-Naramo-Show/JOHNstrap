@@ -11,6 +11,7 @@
       d:DesignHeight="1500" d:DesignWidth="800"
       Title="FastFlagsPage"
       Scrollable="True"
+      ScrollViewer.CanContentScroll="False"
       Loaded="Page_Loaded">
     <StackPanel Margin="0,0,14,14">
         <TextBlock Margin="0,0,0,16" Text="{x:Static resources:Strings.Menu_FastFlags_Description}" FontSize="14" Foreground="{DynamicResource TextFillColorSecondaryBrush}" />

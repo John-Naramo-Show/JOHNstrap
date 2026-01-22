@@ -10,7 +10,8 @@
       mc:Ignorable="d"
       d:DesignHeight="900" d:DesignWidth="800"
       Title="AppearancePage"
-      Scrollable="True">
+      Scrollable="True"
+      ScrollViewer.CanContentScroll="False">
     <StackPanel Margin="0,0,14,14">
         <TextBlock Text="{x:Static resources:Strings.Menu_Appearance_Description}" FontSize="14" Foreground="{DynamicResource TextFillColorSecondaryBrush}" Margin="0,0,0,8" />
 
