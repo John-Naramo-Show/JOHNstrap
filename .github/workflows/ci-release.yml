@@ -106,8 +106,8 @@ jobs:
             echo "title=Workflow ${{ steps.status.outputs.status }}" >> $GITHUB_OUTPUT
             echo "description=**CI (Release)** workflow has completed" >> $GITHUB_OUTPUT
           else
-            echo "title=Builds passing" >> $GITHUB_OUTPUT
-            echo "description=**CI (Release)** builds are passing" >> $GITHUB_OUTPUT
+            echo "title=Builds ${{ steps.status.outputs.status }}" >> $GITHUB_OUTPUT
+            echo "description=**CI (Release)** builds are ${{ steps.status.outputs.status }}" >> $GITHUB_OUTPUT
           fi
 
       - name: Send Discord notification
