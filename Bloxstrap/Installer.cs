@@ -380,7 +380,7 @@ namespace Bloxstrap
                 var result = Frontend.ShowMessageBox(
                     Strings.InstallChecker_VersionLessThanInstalled,
                     MessageBoxImage.Question,
-                    MessageBoxButton.YesNo
+                    MessageBoxButton.YesNo 
                 );
 
                 if (result != MessageBoxResult.Yes)
@@ -601,7 +601,7 @@ namespace Bloxstrap
             {
 #pragma warning disable CS0162 // Unreachable code detected
                 if (OpenReleaseNotes)
-                    Utilities.ShellExecute($"https://github.com/{App.ProjectRepository}/wiki/Release-notes-for-Bloxstrap-v{currentVer}");
+                    Utilities.ShellExecute($"https://github.com/{App.ProjectRepository}/wiki/Release-notes-for-Johnstrap-v{currentVer}");
 #pragma warning restore CS0162 // Unreachable code detected
             }
             else
